@@ -27,7 +27,7 @@ public class Field {
     }
 
     public void setFigure(final Point point, final Figure figure) throws InvalidPointException,
-            AlreadyOccupiedException {
+                                                                        AlreadyOccupiedException {
         if (!checkPoint(point)) {
             throw new InvalidPointException();
         }
