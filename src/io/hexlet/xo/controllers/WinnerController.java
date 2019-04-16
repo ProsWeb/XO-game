@@ -37,23 +37,24 @@ public class WinnerController {
         final Point nextPoint = pointGenerator.next(currentPoint);
         try {
             currentFigure = field.getFigure(currentPoint);
-            nextFigure = field.getFigure(currentPoint);
+
+            if (currentFigure == null)
+                return false;
+
+            nextFigure = field.getFigure(nextPoint);
+
         } catch (final InvalidPointException e) {
             return true;
         }
-
-        if (currentFigure == null) return false;
-
-        if (currentFigure != nextFigure) return false;
+        if (currentFigure != nextFigure)
+            return false;
 
         return check(field, nextPoint, pointGenerator);
-
     }
 
     private interface IPointGenerator {
 
         Point next(final Point point);
-
     }
 
 }
