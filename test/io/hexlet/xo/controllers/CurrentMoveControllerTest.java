@@ -2,16 +2,16 @@ package io.hexlet.xo.controllers;
 
 import io.hexlet.xo.model.Field;
 import io.hexlet.xo.model.Figure;
+import io.hexlet.xo.model.Point;
 import org.junit.Test;
 
-import java.awt.*;
-
 import static org.junit.Assert.*;
+
 
 public class CurrentMoveControllerTest {
 
     @Test
-    public void testCurrentMoveWhenNextMoveIsX() throws Exception {
+    public void testCurrentMoveWhenNextMoveIsO() throws Exception {
         final CurrentMoveController currentMoveController = new CurrentMoveController();
         for (int i = 0; i < 3; i++) {
             final Field field = new Field(3);
@@ -23,7 +23,7 @@ public class CurrentMoveControllerTest {
     }
 
     @Test
-    public void testCurrentMoveWhenNextMoveIsO() throws Exception {
+    public void testCurrentMoveWhenNextMoveIsX() throws Exception {
         final CurrentMoveController currentMoveController = new CurrentMoveController();
         for (int i = 0; i < 3; i++) {
             final Field field = new Field(3);
@@ -47,5 +47,6 @@ public class CurrentMoveControllerTest {
         field.setFigure(new Point(2, 1), Figure.X);
         field.setFigure(new Point(2, 2), Figure.O);
         assertNull(currentMoveController.currentMove(field));
-        }
+    }
+
 }

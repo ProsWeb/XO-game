@@ -1,5 +1,6 @@
 package io.hexlet.xo.model;
 
+
 public class Game {
 
     private final Player[] players;
@@ -27,4 +28,5 @@ public class Game {
     public String getName() {
         return name;
     }
+
 }

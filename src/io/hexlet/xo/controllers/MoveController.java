@@ -1,11 +1,11 @@
 package io.hexlet.xo.controllers;
 
+
 import io.hexlet.xo.model.Field;
 import io.hexlet.xo.model.Figure;
+import io.hexlet.xo.model.Point;
 import io.hexlet.xo.model.exceptions.AlreadyOccupiedException;
 import io.hexlet.xo.model.exceptions.InvalidPointException;
-
-import java.awt.*;
 
 public class MoveController {
 
@@ -18,4 +18,5 @@ public class MoveController {
         }
         field.setFigure(point, figure);
     }
+
 }
