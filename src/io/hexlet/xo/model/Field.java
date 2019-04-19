@@ -25,7 +25,6 @@ public class Field {
         }
     }
 
-
     public int getSize() {
         return fieldSize;
     }

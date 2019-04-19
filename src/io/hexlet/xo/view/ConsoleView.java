@@ -1,9 +1,7 @@
 package io.hexlet.xo.view;
 
 
-import io.hexlet.xo.controllers.CurrentMoveController;
-import io.hexlet.xo.controllers.MoveController;
-import io.hexlet.xo.controllers.WinnerController;
+import io.hexlet.xo.controllers.*;
 import io.hexlet.xo.model.*;
 import io.hexlet.xo.model.exceptions.AlreadyOccupiedException;
 import io.hexlet.xo.model.exceptions.InvalidPointException;
