@@ -16,7 +16,7 @@ public class Field {
     private final int fieldSize;
 
     public Field(final int fieldSize) throws InvalidBoardSizeException {
-        if (fieldSize < MIN_SIZE ) {
+        if (fieldSize < MIN_SIZE) {
             throw new InvalidBoardSizeException();
         }
         else {
