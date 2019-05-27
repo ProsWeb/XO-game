@@ -1,8 +1,8 @@
-package io.hexlet.xo.model;
+package xo.model;
 
 
-import io.hexlet.xo.model.exceptions.InvalidBoardSizeException;
-import io.hexlet.xo.model.exceptions.InvalidPointException;
+import xo.model.exceptions.InvalidBoardSizeException;
+import xo.model.exceptions.InvalidPointException;
 
 
 public class Field {

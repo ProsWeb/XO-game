@@ -1,10 +1,10 @@
-package io.hexlet.xo.view;
+package xo.view;
 
 
-import io.hexlet.xo.controllers.*;
-import io.hexlet.xo.model.*;
-import io.hexlet.xo.model.exceptions.AlreadyOccupiedException;
-import io.hexlet.xo.model.exceptions.InvalidPointException;
+import xo.controllers.*;
+import xo.model.*;
+import xo.model.exceptions.AlreadyOccupiedException;
+import xo.model.exceptions.InvalidPointException;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

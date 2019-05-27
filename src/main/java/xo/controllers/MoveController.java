@@ -1,11 +1,11 @@
-package io.hexlet.xo.controllers;
+package xo.controllers;
 
 
-import io.hexlet.xo.model.Field;
-import io.hexlet.xo.model.Figure;
-import io.hexlet.xo.model.Point;
-import io.hexlet.xo.model.exceptions.AlreadyOccupiedException;
-import io.hexlet.xo.model.exceptions.InvalidPointException;
+import xo.model.Field;
+import xo.model.Figure;
+import xo.model.Point;
+import xo.model.exceptions.AlreadyOccupiedException;
+import xo.model.exceptions.InvalidPointException;
 
 public class MoveController {
 

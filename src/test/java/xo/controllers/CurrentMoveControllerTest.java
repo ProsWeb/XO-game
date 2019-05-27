@@ -1,17 +1,18 @@
-package io.hexlet.xo.controllers;
+package xo.controllers;
 
-import io.hexlet.xo.model.Field;
-import io.hexlet.xo.model.Figure;
-import io.hexlet.xo.model.Point;
-import org.junit.Test;
+import xo.model.Field;
+import xo.model.Figure;
+import xo.model.Point;
 
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 
-public class CurrentMoveControllerTest {
+class CurrentMoveControllerTest {
 
     @Test
-    public void testCurrentMoveWhenNextMoveIsO() throws Exception {
+    void testCurrentMoveWhenNextMoveIsO() throws Exception {
         final CurrentMoveController currentMoveController = new CurrentMoveController();
         for (int i = 0; i < 3; i++) {
             final Field field = new Field(3);
@@ -23,7 +24,7 @@ public class CurrentMoveControllerTest {
     }
 
     @Test
-    public void testCurrentMoveWhenNextMoveIsX() throws Exception {
+    void testCurrentMoveWhenNextMoveIsX() throws Exception {
         final CurrentMoveController currentMoveController = new CurrentMoveController();
         for (int i = 0; i < 3; i++) {
             final Field field = new Field(3);
@@ -34,7 +35,7 @@ public class CurrentMoveControllerTest {
     }
 
     @Test
-    public void testCurrentMoveWhenNoNextMove() throws Exception {
+    void testCurrentMoveWhenNoNextMove() throws Exception {
         final CurrentMoveController currentMoveController = new CurrentMoveController();
         final Field field = new Field(3);
         field.setFigure(new Point(0, 0), Figure.O);

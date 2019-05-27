@@ -1,12 +1,12 @@
-package io.hexlet.xo;
+package xo;
 
 
-import io.hexlet.xo.model.Field;
-import io.hexlet.xo.model.Figure;
-import io.hexlet.xo.model.Game;
-import io.hexlet.xo.model.Player;
-import io.hexlet.xo.model.exceptions.InvalidBoardSizeException;
-import io.hexlet.xo.view.ConsoleView;
+import xo.model.Field;
+import xo.model.Figure;
+import xo.model.Game;
+import xo.model.Player;
+import xo.model.exceptions.InvalidBoardSizeException;
+import xo.view.ConsoleView;
 
 import java.util.Scanner;
 

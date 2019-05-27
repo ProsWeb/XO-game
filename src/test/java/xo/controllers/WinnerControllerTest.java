@@ -1,18 +1,17 @@
-package io.hexlet.xo.controllers;
+package xo.controllers;
 
-import io.hexlet.xo.model.Field;
-import io.hexlet.xo.model.Figure;
-import io.hexlet.xo.model.Point;
-import org.junit.Test;
+import xo.model.Field;
+import xo.model.Figure;
+import xo.model.Point;
 
-import java.awt.*;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class WinnerControllerTest {
+class WinnerControllerTest {
 
     @Test
-    public void testGetWinnerWhenWinnerRowX() throws Exception {
+    void testGetWinnerWhenWinnerRowX() throws Exception {
 
         final WinnerController winnerController = new WinnerController();
         for (int i = 0; i < 3; i++) {
@@ -25,7 +24,7 @@ public class WinnerControllerTest {
     }
 
     @Test
-    public void testGetWinnerWhenWinnerRowO() throws Exception {
+    void testGetWinnerWhenWinnerRowO() throws Exception {
 
         final WinnerController winnerController = new WinnerController();
         for (int i = 0; i < 3; i++) {
@@ -38,7 +37,7 @@ public class WinnerControllerTest {
     }
 
     @Test
-    public void testGetWinnerWhenNoWinnerRow1() throws Exception {
+    void testGetWinnerWhenNoWinnerRow1() throws Exception {
 
         final WinnerController winnerController = new WinnerController();
         for (int i = 0; i < 3; i++) {
@@ -51,7 +50,7 @@ public class WinnerControllerTest {
     }
 
     @Test
-    public void testGetWinnerWhenNoWinnerRow2() throws Exception {
+    void testGetWinnerWhenNoWinnerRow2() throws Exception {
 
         final WinnerController winnerController = new WinnerController();
         for (int i = 0; i < 3; i++) {
@@ -64,7 +63,7 @@ public class WinnerControllerTest {
     }
 
     @Test
-    public void testGetWinnerWhenWinnerColumnX() throws Exception {
+    void testGetWinnerWhenWinnerColumnX() throws Exception {
 
         final WinnerController winnerController = new WinnerController();
         for (int i = 0; i < 3; i++) {
@@ -76,7 +75,7 @@ public class WinnerControllerTest {
         }
     }
     @Test
-    public void testGetWinnerWhenWinnerColumnO() throws Exception {
+    void testGetWinnerWhenWinnerColumnO() throws Exception {
 
         final WinnerController winnerController = new WinnerController();
         for (int i = 0; i < 3; i++) {
@@ -89,7 +88,7 @@ public class WinnerControllerTest {
     }
 
     @Test
-    public void testGetWinnerWhenNoWinnerColumn1() throws Exception {
+    void testGetWinnerWhenNoWinnerColumn1() throws Exception {
 
         final WinnerController winnerController = new WinnerController();
         for (int i = 0; i < 3; i++) {
@@ -102,7 +101,7 @@ public class WinnerControllerTest {
     }
 
     @Test
-    public void testGetWinnerWhenNoWinnerColumn2() throws Exception {
+    void testGetWinnerWhenNoWinnerColumn2() throws Exception {
 
         final WinnerController winnerController = new WinnerController();
         for (int i = 0; i < 3; i++) {
@@ -115,7 +114,7 @@ public class WinnerControllerTest {
     }
 
     @Test
-    public void testGetWinnerWhenWinnerDiag1() throws Exception {
+    void testGetWinnerWhenWinnerDiag1() throws Exception {
 
         final WinnerController winnerController = new WinnerController();
             final Field field = new Field(3);
@@ -126,7 +125,7 @@ public class WinnerControllerTest {
     }
 
     @Test
-    public void testGetWinnerWhenNoWinnerDiag1() throws Exception {
+    void testGetWinnerWhenNoWinnerDiag1() throws Exception {
 
         final WinnerController winnerController = new WinnerController();
         final Field field = new Field(3);
@@ -137,7 +136,7 @@ public class WinnerControllerTest {
     }
 
     @Test
-    public void testGetWinnerWhenWinnerDiag2() throws Exception {
+    void testGetWinnerWhenWinnerDiag2() throws Exception {
 
         final WinnerController winnerController = new WinnerController();
         final Field field = new Field(3);
@@ -148,7 +147,7 @@ public class WinnerControllerTest {
     }
 
     @Test
-    public void testGetWinnerWhenNoWinnerDiag2() throws Exception {
+    void testGetWinnerWhenNoWinnerDiag2() throws Exception {
 
         final WinnerController winnerController = new WinnerController();
         final Field field = new Field(3);
