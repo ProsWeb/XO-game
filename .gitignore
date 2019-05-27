@@ -28,4 +28,3 @@ hs_err_pid*
 # Maven files
 pom.xml.versionsBackup
 !/.mvn/wrapper/maven-wrapper.properties
-/.mvn/*
