@@ -24,3 +24,8 @@ hs_err_pid*
 
 # Idea files
 .idea/
+
+# Maven files
+pom.xml.versionsBackup
+!/.mvn/wrapper/maven-wrapper.properties
+/.mvn/*
