@@ -18,8 +18,7 @@ public class Field {
     public Field(final int fieldSize) throws InvalidBoardSizeException {
         if (fieldSize < MIN_SIZE) {
             throw new InvalidBoardSizeException();
-        }
-        else {
+        } else {
         this.fieldSize = fieldSize;
         field = new Figure[fieldSize][fieldSize];
         }
