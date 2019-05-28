@@ -24,4 +24,5 @@ $ make
 ### Использованы инструменты
  - maven
  - travis
- - log4j
+ - log4j2
+ - starUML
