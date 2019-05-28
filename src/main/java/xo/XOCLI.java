@@ -1,6 +1,6 @@
 package xo;
 
-
+import org.slf4j.Logger;
 import xo.model.Field;
 import xo.model.Figure;
 import xo.model.Game;
@@ -10,7 +10,12 @@ import xo.view.ConsoleView;
 
 import java.util.Scanner;
 
+
+
 public class XOCLI {
+
+    private static final Logger log = org.slf4j.LoggerFactory.getLogger(XOCLI.class);
+
     public static void main(final String[] args) {
         final int FIELD_SIZE = 3;
         final String name1 = playerNameInput(1);
@@ -22,20 +27,20 @@ public class XOCLI {
         Field field = null;
         try {
             field = new Field(FIELD_SIZE);
-        } catch (InvalidBoardSizeException e){
+        } catch (InvalidBoardSizeException e) {
             e.printStackTrace();
         }
         final Game gameXO = new Game(players, field, "XO");
         final ConsoleView consoleView = new ConsoleView();
         consoleView.show(gameXO);
-        while(consoleView.move(gameXO)) {
+        while (consoleView.move(gameXO)) {
             consoleView.show(gameXO);
         }
     }
 
     private static String playerNameInput(final int count) {
         Scanner sc = new Scanner(System.in);
-        System.out.format("Enter Player %s  name: ", count);
+        log.info("Enter Player {}  name: ", count);
         return sc.nextLine();
     }
 
